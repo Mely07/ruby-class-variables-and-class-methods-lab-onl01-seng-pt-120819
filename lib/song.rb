@@ -35,6 +35,7 @@ class Song
       if !(@@genres.include?(genre))
       hash = {genre => value}
     end
+    end
   end
     
   
