@@ -34,8 +34,8 @@ class Song
     answer = []
     @@genres.each do |genre, num_of_songs|
       if !(@@genres.include?(genre))
-      answer << genre
-    end
+        answer << genre
+      end
     return answer
     end
   end
