@@ -31,11 +31,13 @@ class Song
   end
   
   def self.genre_count
-    @@genres.each do |key, value|
-      hash = {key => value}
+    @@genres.each do |genre, value|
+      if !(@@genres.include?(genre))
+      hash = {genre => value}
     end
   end
     
   
 end
+
 
