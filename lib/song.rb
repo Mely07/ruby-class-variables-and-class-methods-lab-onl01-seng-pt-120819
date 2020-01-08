@@ -23,8 +23,8 @@ class Song
   def self.genres
     
     if !(@@genres.include?(genre))
-    [] << genre
-   return 
+
+   return genre
   end
   
   
