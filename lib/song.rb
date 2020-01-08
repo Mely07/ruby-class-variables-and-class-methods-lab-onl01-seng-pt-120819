@@ -32,13 +32,14 @@ class Song
   
   
   def self.genre_count
-  Hash[*@@genres.reduce([]){ |genre, num_of_songs| genre << genre << 5}
-  ]
- 
+  hash = {}
+  @@genres.each do |genre|
+    hash[genre[0]] = genre[1]
 
   end
     
   
 end
+
 
 
