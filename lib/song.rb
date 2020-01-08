@@ -18,8 +18,8 @@ class Song
     @@count
   end
   
-  def self.genres
-  @@genres
+  def self.genres(genre)
+  if @@genres.include?(genre)
   end
   
   def artists
