@@ -34,7 +34,7 @@ class Song
 
     @@genres.map do |genre, num_of_songs|
       if !(@@genres.include?(genre))
-        return @@genre
+        genre
       end
     end
 
