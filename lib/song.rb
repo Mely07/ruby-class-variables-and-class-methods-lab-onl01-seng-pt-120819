@@ -30,11 +30,13 @@ class Song
     @@artists.uniq!
   end
   
+  
   def self.genre_count
 
     @@genres.map do |genre, num_of_songs|
+      answer = []
       if !(@@genres.include?(genre))
-        genre
+        answer << genre
       end
     end
 
