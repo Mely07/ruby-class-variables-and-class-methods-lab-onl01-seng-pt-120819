@@ -32,14 +32,8 @@ class Song
   
   
   def self.genre_count
-   hasher =  @@genre.to_h
-    hasher.each do |genre, num_of_songs|
+   @@genres.to_h
  
-      if (@@genres.include?(genre)
-        genre 
-      end
-
-    end
 
   end
     
