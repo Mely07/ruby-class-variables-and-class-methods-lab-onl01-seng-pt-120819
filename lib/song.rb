@@ -45,16 +45,15 @@ class Song
   
   def self.artist_count
     hash = {}
-      @@artists.each { |artist| 
+    @@artists.each { |artist| 
       if hash.include?(artist)
         hash[artist] += 1
       else 
         hash[artist] = 1 
-      end
+    end
     }
     hash
   end
-  
   
 end
 
