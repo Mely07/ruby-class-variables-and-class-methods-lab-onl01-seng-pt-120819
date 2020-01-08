@@ -44,11 +44,12 @@ class Song
   end
   
   def self.artist_count
+    hash = {}
       @@artists.each { |artist| 
       if hash.include?(artist)
         hash[artist] += 1
       else 
-        hash[artist] = 1 #add key value pair 
+        hash[artist] = 1 
       end
     }
     hash
