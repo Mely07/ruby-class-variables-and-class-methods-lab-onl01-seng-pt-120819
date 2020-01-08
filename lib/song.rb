@@ -36,6 +36,7 @@ class Song
     @@genres.each { |genre| 
       hash[genre] = 0
     }
+    hash
 
   end
   
