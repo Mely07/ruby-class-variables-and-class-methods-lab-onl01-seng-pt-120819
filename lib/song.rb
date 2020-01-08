@@ -23,9 +23,7 @@ class Song
     genres << genre
   end
   
-  def artists
-    @artists
-  end
+  
 
 end
 
