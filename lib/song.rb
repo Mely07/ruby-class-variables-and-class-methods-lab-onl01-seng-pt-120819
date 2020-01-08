@@ -21,8 +21,7 @@ class Song
   end
   
   def self.genres
-    if !(@@genres.include?(genre))
-   return genre
+   return @@genres.uniq
   end
   
   
