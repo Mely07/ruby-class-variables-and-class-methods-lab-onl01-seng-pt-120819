@@ -19,7 +19,7 @@ class Song
   end
   
   def self.genres(genre)
-  if !(@@genres.include?(genre))
+  if !(genres.include?(genre))
     genres << genre
   end
   
