@@ -32,12 +32,10 @@ class Song
   
   
   def self.genre_count
-    
-  Hash[@@genres.collect { |genre| if (@@genres.include?genre) [genre, +1]
-  else [genre, 1] } ]
 
+    Hash[@@genres.collect { |genre| [genre, ""] } ]
   end
-end
+  end
     
   
 end
