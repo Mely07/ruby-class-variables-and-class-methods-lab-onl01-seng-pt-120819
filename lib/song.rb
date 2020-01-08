@@ -38,6 +38,7 @@ class Song
       if !(@@genres.include?(genre))
         answer << genre
       end
+      answer
     end
 
   end
