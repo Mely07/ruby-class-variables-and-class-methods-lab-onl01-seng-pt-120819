@@ -13,8 +13,8 @@ class Song
     
     @@count += 1
     @@genres << genre
-    end
   end
+  
   
   def self.count
     @@count
@@ -24,7 +24,5 @@ class Song
    return @@genres.uniq!
   end
   
-  
-
 end
 
