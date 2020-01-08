@@ -12,8 +12,7 @@ class Song
     @name = name
     
     @@count += 1
-    if !(@@genres.include?(genre))
-      @@genres << genre
+    @@genres << genre
     end
   end
   
@@ -22,6 +21,8 @@ class Song
   end
   
   def self.genres
+    if !(@@genres.include?(genre))
+    @@genres << genre
    @@genres
   end
   
